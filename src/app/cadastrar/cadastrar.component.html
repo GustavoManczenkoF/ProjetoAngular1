@@ -1,0 +1,18 @@
+<div class="cadastrar">
+  <form [formGroup]="cadastrarForm" class="form">
+    <label> username: </label>
+    <input type="text" formControlName="username" />
+    <label> password: </label>
+    <input type="text" formControlName="password" />
+    <label> email: </label>
+    <input type="text" formControlName="email" />
+    <label> nascimento: </label>
+    <input type="text" formControlName="nascimento" />
+
+    <div class="btns">
+      <button type="submit" class="submit" (click)="validarForm()">
+        Cadastrar
+      </button>
+    </div>
+  </form>
+</div>
